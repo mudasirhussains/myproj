@@ -11,8 +11,8 @@ class Mosiac extends Component {
   mosiac = () =>{
       return this.state.data.map(singleData=>{
           return(
-              <View key={singleData.id} style={{height:200, margin:3, flexBasis:'48%',}}>
-                <ImageBackground imageStyle={{borderRadius:15}} style={{height:200, }} source={{uri: singleData.image_link}}>
+              <View key={singleData.id} style={{height:250, margin:3, flexBasis:'48%',}}>
+                <ImageBackground imageStyle={{borderRadius:15}} style={{height:250, }} source={{uri: singleData.image_link}}>
 
                     <LinearGradient  
                     start={{x: 0.1, y: 0.6}} end={{x: 0.1, y: 1}} 
@@ -45,7 +45,7 @@ class Mosiac extends Component {
 
 const styles=StyleSheet.create({
     container:{
-        height:700,
+        height:800,
         flexWrap: 'wrap',
         flexDirection:'row',
         overflow:'hidden',
